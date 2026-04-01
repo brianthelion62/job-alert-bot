@@ -101,12 +101,12 @@ def send_email(new_jobs):
 
     msg = MIMEText(body)
     msg["Subject"] = "New Job Alerts"
-    msg["From"] = "YOUR_EMAIL"
-    msg["To"] = "YOUR_EMAIL"
+    msg["From"] = "millerbrian62@gmail.com"
+    msg["To"] = "millerbrian62@gmail.com"
 
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls()
-        server.login("YOUR_EMAIL", "YOUR_APP_PASSWORD")
+        server.login("millerbrian62@gmail.com", "ioujtqlxumhnqwqu")
         server.send_message(msg)
 
 
