@@ -76,14 +76,17 @@ def scrape_jobs(url):
         page.goto(url, timeout=60000)
 
         links = page.query_selector_all("a")
-        for link in links:
-            try:
-                title = link.inner_text()
-                href = link.get_attribute("href")
+for link in links:
+    try:
+        title = link.inner_text()
+        href = link.get_attribute("href")
 
-if title and href:
-    href = urljoin(url, href)
-    results.append({"title": title, "link": href})
+        if title and href:
+            href = urljoin(url, href)
+            results.append({"title": title, "link": href})
+
+    except:
+        continue
             except:
                 continue
 
