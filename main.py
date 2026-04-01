@@ -87,8 +87,6 @@ for link in links:
 
     except:
         continue
-            except:
-                continue
 
         browser.close()
 
