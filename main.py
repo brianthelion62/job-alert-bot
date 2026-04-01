@@ -18,6 +18,7 @@ import json
 import smtplib
 from email.mime.text import MIMEText
 from playwright.sync_api import sync_playwright
+from urllib.parse import urljoin
 
 KEYWORDS = [
     "project manager",
@@ -80,8 +81,9 @@ def scrape_jobs(url):
                 title = link.inner_text()
                 href = link.get_attribute("href")
 
-                if title and href:
-                    results.append({"title": title, "link": href})
+if title and href:
+    href = urljoin(url, href)
+    results.append({"title": title, "link": href})
             except:
                 continue
 
