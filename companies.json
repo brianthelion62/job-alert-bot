@@ -1,12 +1,14 @@
-# =========================
-# companies.json (starter list)
-# =========================
 [
-  {"name": "Apple", "url": "https://jobs.apple.com/en-us/search"},
-  {"name": "Amazon", "url": "https://www.amazon.jobs/en/search"},
-  {"name": "Google", "url": "https://careers.google.com/jobs/results/"},
-  {"name": "Stripe", "url": "https://stripe.com/jobs/search"},
-  {"name": "GitLab", "url": "https://about.gitlab.com/jobs/"},
-  {"name": "Tesla", "url": "https://www.tesla.com/careers/search"},
-  {"name": "PayPal", "url": "https://careers.pypl.com/jobs"}
+  {
+    "name": "Apple",
+    "url": "https://jobs.apple.com/en-us/search"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.jobs/en/search"
+  },
+  {
+    "name": "Dell",
+    "url": "https://jobs.dell.com/search-jobs"
+  }
 ]
